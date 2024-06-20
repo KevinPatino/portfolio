@@ -41,6 +41,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #93A8AC;
+  margin: 3rem 0;
 }
 .about-me img {
   height: 500px;
@@ -74,6 +75,149 @@ body {
   font-weight: 700;
   color: #CD8B76;
   cursor: pointer;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hobbies .music {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+  width: 300px;
+  margin: 4rem;
+  border-radius: 5%;
+  border: solid 2px #DBFF76;
+}
+.hobbies .music:hover {
+  border: solid 6px #CD8B76;
+  transition: 0.2s;
+}
+.hobbies .music:hover .appear-music {
+  visibility: visible;
+}
+.hobbies .music:hover .main-img {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.hobbies .music .main-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  z-index: -1;
+}
+.hobbies .music .appear-music {
+  visibility: hidden;
+  display: block;
+  align-items: start;
+}
+.hobbies .music .appear-music .sub-img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+}
+.hobbies .music .appear-music p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #DBFF76;
+}
+.hobbies .nature {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+  width: 300px;
+  margin: 4rem;
+  border-radius: 5%;
+  border: solid 2px #DBFF76;
+}
+.hobbies .nature:hover {
+  border: solid 6px #CD8B76;
+  transition: 0.2s;
+}
+.hobbies .nature:hover .appear-nature {
+  visibility: visible;
+}
+.hobbies .nature:hover .main-img {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.hobbies .nature .main-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  z-index: -1;
+}
+.hobbies .nature .appear-nature {
+  visibility: hidden;
+  display: block;
+  align-items: start;
+}
+.hobbies .nature .appear-nature .sub-img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+}
+.hobbies .nature .appear-nature p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #DBFF76;
+}
+.hobbies .movies {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+  width: 300px;
+  margin: 4rem;
+  border-radius: 5%;
+  border: solid 2px #DBFF76;
+}
+.hobbies .movies:hover {
+  border: solid 6px #CD8B76;
+  transition: 0.2s;
+}
+.hobbies .movies:hover .appear-movies {
+  visibility: visible;
+}
+.hobbies .movies:hover .main-img {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.hobbies .movies .main-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  z-index: -1;
+}
+.hobbies .movies .appear-movies {
+  visibility: hidden;
+  display: block;
+  align-items: start;
+}
+.hobbies .movies .appear-movies .sub-img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+}
+.hobbies .movies .appear-movies p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #DBFF76;
 }
 
 /*# sourceMappingURL=index.css.map */
