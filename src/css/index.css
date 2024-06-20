@@ -23,13 +23,12 @@ body {
 .nav {
   display: flex;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 .nav * {
   padding: 0 1rem;
   color: #93A8AC;
-  font-weight: 700;
 }
 .nav * *:hover {
   font-weight: 700;
