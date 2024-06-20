@@ -23,17 +23,57 @@ body {
 .nav {
   display: flex;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 .nav * {
   padding: 0 1rem;
   color: #93A8AC;
-  font-weight: 700;
 }
 .nav * *:hover {
   font-weight: 700;
   color: #CD8B76;
+  cursor: pointer;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #93A8AC;
+}
+.about-me img {
+  height: 500px;
+  width: 500px;
+  padding: 50px;
+  border-radius: 50%;
+}
+.about-me .about-me-descrip {
+  padding: 50px;
+  padding-left: 0;
+}
+.about-me .name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  color: #DBFF76;
+}
+.about-me p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+.about-me .more-about-me {
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+.about-me .more-about-me:hover {
+  font-weight: 700;
+  color: #CD8B76;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

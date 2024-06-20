@@ -7,12 +7,15 @@ body{
     margin: 0;
     padding: 0;
 }
+
+// Esto es para el contenedor de la barra de navegacion
 .navbar-homepage {
     display: flex;
     justify-content: end;
     justify-content: space-between;
     border-bottom: solid 2px #DBFF76;
-
+        
+        // Imagen
         img {
             height: 2rem;
             width: 3.5rem;
@@ -21,20 +24,72 @@ body{
         
     }
 
+    // Definir el tipo de letra para los apartados del navbar
     .nav {
         display: flex;
         font-family: "Poppins", sans-serif;
-        font-weight: 700;
+        font-weight: 500;
         font-style: normal;
 
+        // color del texto navbar
         & * {
             padding: 0 1rem;
             color: #93A8AC;
-            font-weight: 700;
 
+        // cambio de color al momento de pasar el mouse
         & *:hover {
             font-weight: 700;
             color: #CD8B76;
+            cursor: pointer;
+        }
+    }
+}
+
+// Esto es para trabajar en el contenedor del espacio "About me"
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #93A8AC;
+
+    img {
+        height: 500px;
+        width: 500px;
+        padding: 50px;
+        border-radius: 50%;
+    }
+
+    .about-me-descrip {
+        padding: 50px;
+        padding-left: 0;
+    }
+
+    .name {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3rem;
+        color:#DBFF76;
+    }
+
+    p {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+
+    .more-about-me {
+        font-size: 1rem;
+        padding-left: 1rem;
+
+        
+        &:hover {
+            font-weight: 700;
+            color: #CD8B76;
+            cursor: pointer;
         }
     }
 }
