@@ -10,7 +10,6 @@ body {
 
 .navbar-homepage {
   display: flex;
-  justify-content: end;
   justify-content: space-between;
   border-bottom: solid 2px #DBFF76;
 }
@@ -77,9 +76,19 @@ body {
   cursor: pointer;
 }
 
+h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  color: #DBFF76;
+}
+
 .hobbies {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .hobbies .music {
   display: flex;
@@ -99,7 +108,7 @@ body {
   visibility: visible;
 }
 .hobbies .music:hover .main-img {
-  opacity: 0.3;
+  opacity: 0.2;
   transition: 0.4s;
 }
 .hobbies .music .main-img {
@@ -112,7 +121,7 @@ body {
 .hobbies .music .appear-music {
   visibility: hidden;
   display: block;
-  align-items: start;
+  align-items: center;
 }
 .hobbies .music .appear-music .sub-img {
   position: relative;
@@ -213,6 +222,144 @@ body {
   z-index: 2;
 }
 .hobbies .movies .appear-movies p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #DBFF76;
+}
+.hobbies .food {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+  width: 300px;
+  margin: 4rem;
+  border-radius: 5%;
+  border: solid 2px #DBFF76;
+}
+.hobbies .food:hover {
+  border: solid 6px #CD8B76;
+  transition: 0.2s;
+}
+.hobbies .food:hover .appear-food {
+  visibility: visible;
+}
+.hobbies .food:hover .main-img {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.hobbies .food .main-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  z-index: -1;
+}
+.hobbies .food .appear-food {
+  visibility: hidden;
+  display: block;
+  align-items: start;
+}
+.hobbies .food .appear-food .sub-img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+}
+.hobbies .food .appear-food p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #DBFF76;
+}
+.hobbies .friends {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+  width: 300px;
+  margin: 4rem;
+  border-radius: 5%;
+  border: solid 2px #DBFF76;
+}
+.hobbies .friends:hover {
+  border: solid 6px #CD8B76;
+  transition: 0.2s;
+}
+.hobbies .friends:hover .appear-friends {
+  visibility: visible;
+}
+.hobbies .friends:hover .main-img {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.hobbies .friends .main-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  z-index: -1;
+}
+.hobbies .friends .appear-friends {
+  visibility: hidden;
+  display: block;
+  align-items: start;
+}
+.hobbies .friends .appear-friends .sub-img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+}
+.hobbies .friends .appear-friends p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #DBFF76;
+}
+.hobbies .technology {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+  width: 300px;
+  margin: 4rem;
+  border-radius: 5%;
+  border: solid 2px #DBFF76;
+}
+.hobbies .technology:hover {
+  border: solid 6px #CD8B76;
+  transition: 0.2s;
+}
+.hobbies .technology:hover .appear-technology {
+  visibility: visible;
+}
+.hobbies .technology:hover .main-img {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.hobbies .technology .main-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  z-index: -1;
+}
+.hobbies .technology .appear-technology {
+  visibility: hidden;
+  display: block;
+  align-items: start;
+}
+.hobbies .technology .appear-technology .sub-img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+}
+.hobbies .technology .appear-technology p {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;

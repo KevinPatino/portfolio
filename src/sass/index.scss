@@ -11,7 +11,6 @@ body{
 // Esto es para el contenedor de la barra de navegacion
 .navbar-homepage {
     display: flex;
-    justify-content: end;
     justify-content: space-between;
     border-bottom: solid 2px #DBFF76;
         
@@ -97,10 +96,20 @@ body{
 
 // Aqui empieza la parte de contenedor para los Hobbies
 
+h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color:#DBFF76;
+
+}
+
 .hobbies {
     display: flex;
     justify-content: space-evenly;
-    
+    flex-wrap: wrap;
 
     // Esto es para la imagen 1 "Music"
     .music {
@@ -122,7 +131,7 @@ body{
             }
 
             .main-img {
-                opacity: 0.3;
+                opacity: 0.2;
                 transition: 0.4s;
             }
         }
@@ -139,7 +148,7 @@ body{
         .appear-music {
             visibility: hidden;
             display: block;
-            align-items: start;
+            align-items: center;
 
             .sub-img {
                 position: relative;
@@ -258,6 +267,186 @@ body{
         }
 
         .appear-movies {
+            visibility: hidden;
+            display: block;
+            align-items: start;
+
+            .sub-img {
+                position: relative;
+                height: 100px;
+                width: 100px;
+                z-index: 2;
+
+            }
+
+            p {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 1rem;
+                color: #DBFF76;
+
+            }
+
+        }
+        
+    }
+
+    // Esto es para la imagen 4 "Food"
+    .food {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 200px;
+        width: 300px;
+        margin: 4rem;
+        border-radius: 5%;
+        border: solid 2px #DBFF76;
+
+        &:hover {
+            border: solid 6px #CD8B76;
+            transition: 0.2s;
+
+            .appear-food {
+                visibility: visible;
+            }
+
+            .main-img {
+                opacity: 0.3;
+                transition: 0.4s;
+            }
+        }
+
+        .main-img {
+            position: absolute;
+            height: 100%;
+            width: 100%; 
+            border-radius: 2%; 
+            z-index: -1;
+            
+        }
+
+        .appear-food {
+            visibility: hidden;
+            display: block;
+            align-items: start;
+
+            .sub-img {
+                position: relative;
+                height: 100px;
+                width: 100px;
+                z-index: 2;
+
+            }
+
+            p {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 1rem;
+                color: #DBFF76;
+
+            }
+
+        }
+        
+    }
+
+    // Esto es para la imagen 5 "Friends"
+    .friends {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 200px;
+        width: 300px;
+        margin: 4rem;
+        border-radius: 5%;
+        border: solid 2px #DBFF76;
+
+        &:hover {
+            border: solid 6px #CD8B76;
+            transition: 0.2s;
+
+            .appear-friends {
+                visibility: visible;
+            }
+
+            .main-img {
+                opacity: 0.3;
+                transition: 0.4s;
+            }
+        }
+
+        .main-img {
+            position: absolute;
+            height: 100%;
+            width: 100%; 
+            border-radius: 2%; 
+            z-index: -1;
+            
+        }
+
+        .appear-friends {
+            visibility: hidden;
+            display: block;
+            align-items: start;
+
+            .sub-img {
+                position: relative;
+                height: 100px;
+                width: 100px;
+                z-index: 2;
+
+            }
+
+            p {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 1rem;
+                color: #DBFF76;
+
+            }
+
+        }
+        
+    }
+
+    // Esto es para la imagen 6 "Technology"
+    .technology {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 200px;
+        width: 300px;
+        margin: 4rem;
+        border-radius: 5%;
+        border: solid 2px #DBFF76;
+
+        &:hover {
+            border: solid 6px #CD8B76;
+            transition: 0.2s;
+
+            .appear-technology {
+                visibility: visible;
+            }
+
+            .main-img {
+                opacity: 0.3;
+                transition: 0.4s;
+            }
+        }
+
+        .main-img {
+            position: absolute;
+            height: 100%;
+            width: 100%; 
+            border-radius: 2%; 
+            z-index: -1;
+            
+        }
+
+        .appear-technology {
             visibility: hidden;
             display: block;
             align-items: start;
