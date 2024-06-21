@@ -148,7 +148,7 @@ h2 {
         .appear-music {
             visibility: hidden;
             display: block;
-            align-items: center;
+            text-align: center;
 
             .sub-img {
                 position: relative;
@@ -208,7 +208,7 @@ h2 {
         .appear-nature {
             visibility: hidden;
             display: block;
-            align-items: start;
+            text-align: center;
 
             .sub-img {
                 position: relative;
@@ -269,7 +269,7 @@ h2 {
         .appear-movies {
             visibility: hidden;
             display: block;
-            align-items: start;
+            text-align: center;
 
             .sub-img {
                 position: relative;
@@ -329,7 +329,7 @@ h2 {
         .appear-food {
             visibility: hidden;
             display: block;
-            align-items: start;
+            text-align: center;
 
             .sub-img {
                 position: relative;
@@ -389,7 +389,7 @@ h2 {
         .appear-friends {
             visibility: hidden;
             display: block;
-            align-items: start;
+            text-align: center;
 
             .sub-img {
                 position: relative;
@@ -449,7 +449,7 @@ h2 {
         .appear-technology {
             visibility: hidden;
             display: block;
-            align-items: start;
+            text-align: center;
 
             .sub-img {
                 position: relative;
@@ -471,4 +471,167 @@ h2 {
         }
         
     }
+}
+
+.studies-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "studies projects";
+    color: #93A8AC;
+
+    .studies {
+        grid-area: studies;
+        display: flex;
+        flex-direction: column;
+        padding-left: 8rem;
+        padding-right: 2rem;
+
+        font-family: "Lato", sans-serif;
+
+        h3 {
+            color: #CD8B76;
+        }
+        
+        // Aqui se da estilo al estudio de web development
+        .studies-web-dev {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .studies-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+            
+        }
+
+        // Aqui se da estilo al estudio de industrial Engineer
+        .studies-ind-eng {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .studies-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+            
+        }
+
+        // Aqui se da estilo al estudio de HTML
+        .studies-html {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .html-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+            
+        }
+
+        // Aqui se da estilo al estudio de CSS
+        .studies-css {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .css-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+            
+        }
+
+
+    }
+
+
+
+    .projects {
+        grid-area: projects;
+        display: flex;
+        flex-direction: column;
+        padding-left: 8rem;
+        padding-right: 2rem;
+
+        font-family: "Lato", sans-serif;
+    
+    }
+
+    
 }
