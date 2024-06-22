@@ -372,6 +372,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "studies projects";
   color: #93A8AC;
+  margin: 4rem auto;
 }
 .studies-projects .studies {
   grid-area: studies;
@@ -647,6 +648,28 @@ h2 {
 }
 .studies-projects .projects .project-international p {
   margin: 0;
+}
+
+.contact {
+  display: block;
+  text-align: center;
+  padding: 10px 0 20px 0;
+  border-top: solid 2px #DBFF76;
+  background-color: black;
+}
+.contact h5 {
+  display: inline-block;
+  margin: 1rem 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #DBFF76;
+}
+.contact img {
+  height: 2rem;
+  width: 2rem;
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
