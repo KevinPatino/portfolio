@@ -617,6 +617,37 @@ h2 {
             
         }
 
+        // Aqui se da estilo al estudio de Excel
+        .studies-excel {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .excel-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+            
+        }
+
 
     }
 
@@ -626,12 +657,194 @@ h2 {
         grid-area: projects;
         display: flex;
         flex-direction: column;
-        padding-left: 8rem;
+        padding-left: 2rem;
         padding-right: 2rem;
 
         font-family: "Lato", sans-serif;
-    
-    }
 
-    
+        h3 {
+            color: #CD8B76;
+        }
+        
+        // Aqui se da estilo al proyecto de payment
+        .project-payment {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .studies-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }     
+        }
+
+        // Aqui se da estilo al proyecto de cnotrol documental
+        .project-documental {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .documental-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }     
+        }
+
+        // Aqui se da estilo al proyecto de packaging
+        .project-packaging {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .packaging-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }     
+        }
+
+        // Aqui se da estilo al proyecto de ecommerce
+        .project-ecommerce {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .ecommerce-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }     
+        }
+
+        // Aqui se da estilo al proyecto de logistic
+        .project-logistic {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .logistic-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }     
+        }
+
+        // Aqui se da estilo al proyecto de compras internacionales
+        .project-international {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-areas: 
+                "image text";
+            margin: 2rem 0;
+
+            img {
+                grid-area: image;
+                margin-right: 1rem;
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+            }
+
+            .international-text {
+                grid-area: text;
+            }
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin: 0;
+            }     
+        }
+
+    } 
 }
