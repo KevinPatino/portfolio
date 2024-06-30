@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background-color: #424B54;
+  background-color: whitesmoke;
 }
 
 body {
@@ -11,12 +11,29 @@ body {
 .navbar-homepage {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 2px #DBFF76;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-box-shadow: 0px 10px 16px -6px rgba(48, 65, 93, 0.2);
+  -moz-box-shadow: 0px 10px 16px -6px rgba(48, 65, 93, 0.2);
+  box-shadow: 0px 10px 16px -6px rgba(48, 65, 93, 0.2);
+  z-index: 100;
 }
-.navbar-homepage img {
-  height: 2rem;
-  width: 3.5rem;
+.navbar-homepage .nav-logo {
+  height: auto;
+  width: 30%;
   padding: 10px;
+  margin-left: 2%;
+  align-content: center;
+}
+.navbar-homepage .nav-logo p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #30415D;
 }
 
 .nav {
@@ -25,22 +42,30 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+.nav p {
+  padding: 8px;
+}
 .nav * {
   padding: 0 1rem;
-  color: #93A8AC;
+  color: #30415D;
 }
 .nav * *:hover {
   font-weight: 700;
-  color: #CD8B76;
   cursor: pointer;
+  background-color: #30415D;
+  transition: 0.5s;
+  color: whitesmoke;
 }
 
 .about-me {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #DCD0C0;
   color: #93A8AC;
-  margin: 3rem 0;
+  height: 100vh;
+  max-width: 200vh;
+  min-width: 100vh;
 }
 .about-me img {
   height: 500px;
@@ -50,14 +75,22 @@ body {
 }
 .about-me .about-me-descrip {
   padding: 50px;
-  padding-left: 0;
 }
 .about-me .name {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 3rem;
-  color: #DBFF76;
+  font-size: 1.5rem;
+  color: #30415D;
+  margin: 2px;
+}
+.about-me .main-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+  color: #cf6766;
+  margin: 0;
 }
 .about-me p {
   font-family: "Lato", sans-serif;
@@ -65,6 +98,7 @@ body {
   font-style: normal;
   text-align: justify;
   font-size: 1.5rem;
+  color: #3C3C3C;
 }
 .about-me .more-about-me {
   font-size: 1rem;
@@ -76,19 +110,24 @@ body {
   cursor: pointer;
 }
 
-h2 {
+#hobbies-header-text {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 2rem;
-  color: #DBFF76;
+  color: #30415D;
+  background-color: #93A8AC;
+  margin: 0;
+  padding: 1rem 0;
 }
 
 .hobbies {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  height: 100vh;
+  background-color: #93A8AC;
 }
 .hobbies .music {
   display: flex;
@@ -96,9 +135,8 @@ h2 {
   position: relative;
   height: 200px;
   width: 300px;
-  margin: 4rem;
+  margin: 0.3rem 3rem;
   border-radius: 5%;
-  border: solid 2px #DBFF76;
 }
 .hobbies .music:hover {
   border: solid 6px #CD8B76;
@@ -108,7 +146,7 @@ h2 {
   visibility: visible;
 }
 .hobbies .music:hover .main-img {
-  opacity: 0.2;
+  filter: brightness(0.5);
   transition: 0.4s;
 }
 .hobbies .music .main-img {
@@ -116,12 +154,13 @@ h2 {
   height: 100%;
   width: 100%;
   border-radius: 2%;
-  z-index: -1;
+  z-index: 0;
 }
 .hobbies .music .appear-music {
   visibility: hidden;
   display: block;
   text-align: center;
+  z-index: 2;
 }
 .hobbies .music .appear-music .sub-img {
   position: relative;
@@ -134,7 +173,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
-  color: #DBFF76;
+  color: #CD8B76;
 }
 .hobbies .nature {
   display: flex;
@@ -142,9 +181,8 @@ h2 {
   position: relative;
   height: 200px;
   width: 300px;
-  margin: 4rem;
+  margin: 0.3rem 3rem;
   border-radius: 5%;
-  border: solid 2px #DBFF76;
 }
 .hobbies .nature:hover {
   border: solid 6px #CD8B76;
@@ -154,7 +192,7 @@ h2 {
   visibility: visible;
 }
 .hobbies .nature:hover .main-img {
-  opacity: 0.3;
+  filter: brightness(0.5);
   transition: 0.4s;
 }
 .hobbies .nature .main-img {
@@ -162,12 +200,13 @@ h2 {
   height: 100%;
   width: 100%;
   border-radius: 2%;
-  z-index: -1;
+  z-index: 0;
 }
 .hobbies .nature .appear-nature {
   visibility: hidden;
   display: block;
   text-align: center;
+  z-index: 2;
 }
 .hobbies .nature .appear-nature .sub-img {
   position: relative;
@@ -180,7 +219,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
-  color: #DBFF76;
+  color: #CD8B76;
 }
 .hobbies .movies {
   display: flex;
@@ -188,9 +227,8 @@ h2 {
   position: relative;
   height: 200px;
   width: 300px;
-  margin: 4rem;
+  margin: 0.3rem 3rem;
   border-radius: 5%;
-  border: solid 2px #DBFF76;
 }
 .hobbies .movies:hover {
   border: solid 6px #CD8B76;
@@ -200,7 +238,7 @@ h2 {
   visibility: visible;
 }
 .hobbies .movies:hover .main-img {
-  opacity: 0.3;
+  filter: brightness(0.5);
   transition: 0.4s;
 }
 .hobbies .movies .main-img {
@@ -208,12 +246,13 @@ h2 {
   height: 100%;
   width: 100%;
   border-radius: 2%;
-  z-index: -1;
+  z-index: 0;
 }
 .hobbies .movies .appear-movies {
   visibility: hidden;
   display: block;
   text-align: center;
+  z-index: 2;
 }
 .hobbies .movies .appear-movies .sub-img {
   position: relative;
@@ -226,7 +265,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
-  color: #DBFF76;
+  color: #CD8B76;
 }
 .hobbies .food {
   display: flex;
@@ -234,9 +273,8 @@ h2 {
   position: relative;
   height: 200px;
   width: 300px;
-  margin: 4rem;
+  margin: 0.3rem 3rem;
   border-radius: 5%;
-  border: solid 2px #DBFF76;
 }
 .hobbies .food:hover {
   border: solid 6px #CD8B76;
@@ -246,7 +284,7 @@ h2 {
   visibility: visible;
 }
 .hobbies .food:hover .main-img {
-  opacity: 0.3;
+  filter: brightness(0.5);
   transition: 0.4s;
 }
 .hobbies .food .main-img {
@@ -254,12 +292,13 @@ h2 {
   height: 100%;
   width: 100%;
   border-radius: 2%;
-  z-index: -1;
+  z-index: 0;
 }
 .hobbies .food .appear-food {
   visibility: hidden;
   display: block;
   text-align: center;
+  z-index: 2;
 }
 .hobbies .food .appear-food .sub-img {
   position: relative;
@@ -272,7 +311,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
-  color: #DBFF76;
+  color: #CD8B76;
 }
 .hobbies .friends {
   display: flex;
@@ -280,9 +319,8 @@ h2 {
   position: relative;
   height: 200px;
   width: 300px;
-  margin: 4rem;
+  margin: 0.3rem 3rem;
   border-radius: 5%;
-  border: solid 2px #DBFF76;
 }
 .hobbies .friends:hover {
   border: solid 6px #CD8B76;
@@ -292,20 +330,21 @@ h2 {
   visibility: visible;
 }
 .hobbies .friends:hover .main-img {
-  opacity: 0.3;
-  transition: 0.4s;
+  filter: brightness(0.5);
+  transition: 0.3s;
 }
 .hobbies .friends .main-img {
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 2%;
-  z-index: -1;
+  z-index: 0;
 }
 .hobbies .friends .appear-friends {
   visibility: hidden;
   display: block;
   text-align: center;
+  z-index: 2;
 }
 .hobbies .friends .appear-friends .sub-img {
   position: relative;
@@ -318,7 +357,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
-  color: #DBFF76;
+  color: #CD8B76;
 }
 .hobbies .technology {
   display: flex;
@@ -326,9 +365,8 @@ h2 {
   position: relative;
   height: 200px;
   width: 300px;
-  margin: 4rem;
+  margin: 0.3rem 3rem;
   border-radius: 5%;
-  border: solid 2px #DBFF76;
 }
 .hobbies .technology:hover {
   border: solid 6px #CD8B76;
@@ -338,20 +376,21 @@ h2 {
   visibility: visible;
 }
 .hobbies .technology:hover .main-img {
-  opacity: 0.3;
-  transition: 0.4s;
+  filter: brightness(0.5);
+  transition: 0.3s;
 }
 .hobbies .technology .main-img {
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 2%;
-  z-index: -1;
+  z-index: 0;
 }
 .hobbies .technology .appear-technology {
   visibility: hidden;
   display: block;
   text-align: center;
+  z-index: 2;
 }
 .hobbies .technology .appear-technology .sub-img {
   position: relative;
@@ -364,7 +403,19 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
-  color: #DBFF76;
+  color: #CD8B76;
+}
+
+#studies-projects-header-text {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  color: #30415D;
+  background-color: #945D60;
+  margin: 0;
+  padding: 1rem 0;
 }
 
 .studies-projects {
@@ -372,7 +423,8 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "studies projects";
   color: #93A8AC;
-  margin: 4rem auto;
+  background-color: #945D60;
+  padding: 3rem auto;
 }
 .studies-projects .studies {
   grid-area: studies;

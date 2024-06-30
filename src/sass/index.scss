@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    background-color: #424B54;
+    background-color: whitesmoke;
 }
 
 body{
@@ -12,13 +12,33 @@ body{
 .navbar-homepage {
     display: flex;
     justify-content: space-between;
-    border-bottom: solid 2px #DBFF76;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    -webkit-box-shadow: 0px 10px 16px -6px rgba(48,65,93,0.2);
+    -moz-box-shadow: 0px 10px 16px -6px rgba(48,65,93,0.2);
+    box-shadow: 0px 10px 16px -6px rgba(48,65,93,0.2);
+    z-index: 100;
+
         
         // Imagen
-        img {
-            height: 2rem;
-            width: 3.5rem;
+        .nav-logo {
+            height: auto;
+            width: 30%; 
             padding: 10px;
+            margin-left: 2%;
+            align-content: center;
+
+            p {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 1rem;
+                color:#30415D;
+            }
+
         }
         
     }
@@ -30,16 +50,22 @@ body{
         font-weight: 500;
         font-style: normal;
 
+        p {
+            padding: 8px;
+        }
+
         // color del texto navbar
         & * {
             padding: 0 1rem;
-            color: #93A8AC;
+            color: #30415D;
 
         // cambio de color al momento de pasar el mouse
         & *:hover {
             font-weight: 700;
-            color: #CD8B76;
             cursor: pointer;
+            background-color: #30415D;
+            transition: 0.5s;
+            color: whitesmoke;
         }
     }
 }
@@ -50,9 +76,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #DCD0C0;
     color: #93A8AC;
-    margin: 3rem 0;
-
+    height: 100vh;
+    max-width: 200vh;
+    min-width: 100vh;
+    
     img {
         height: 500px;
         width: 500px;
@@ -62,15 +91,24 @@ body{
 
     .about-me-descrip {
         padding: 50px;
-        padding-left: 0;
     }
 
     .name {
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 3rem;
-        color:#DBFF76;
+        font-size: 1.5rem;
+        color: #30415D;
+        margin: 2px;
+    }
+
+    .main-name {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 4rem;
+        color: #cf6766;
+        margin: 0;
     }
 
     p {
@@ -79,6 +117,7 @@ body{
         font-style: normal;
         text-align: justify;
         font-size: 1.5rem;
+        color: #3C3C3C;
     }
 
     .more-about-me {
@@ -96,20 +135,24 @@ body{
 
 // Aqui empieza la parte de contenedor para los Hobbies
 
-h2 {
+#hobbies-header-text {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2rem;
-    color:#DBFF76;
-
+    color: #30415D;
+    background-color: #93A8AC;
+    margin: 0;
+    padding: 1rem 0;
 }
 
 .hobbies {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    height: 100vh;
+    background-color: #93A8AC;
 
     // Esto es para la imagen 1 "Music"
     .music {
@@ -118,9 +161,8 @@ h2 {
         position: relative;
         height: 200px;
         width: 300px;
-        margin: 4rem;
+        margin: 0.3rem 3rem;
         border-radius: 5%;
-        border: solid 2px #DBFF76;
 
         &:hover {
             border: solid 6px #CD8B76;
@@ -131,7 +173,7 @@ h2 {
             }
 
             .main-img {
-                opacity: 0.2;
+                filter: brightness(0.5);
                 transition: 0.4s;
             }
         }
@@ -141,7 +183,7 @@ h2 {
             height: 100%;
             width: 100%; 
             border-radius: 2%; 
-            z-index: -1;
+            z-index: 0;
             
         }
 
@@ -149,6 +191,7 @@ h2 {
             visibility: hidden;
             display: block;
             text-align: center;
+            z-index: 2;
 
             .sub-img {
                 position: relative;
@@ -163,8 +206,7 @@ h2 {
                 font-weight: 700;
                 font-style: normal;
                 font-size: 1rem;
-                color: #DBFF76;
-
+                color: #CD8B76;
             }
 
         }
@@ -178,9 +220,8 @@ h2 {
         position: relative;
         height: 200px;
         width: 300px;
-        margin: 4rem;
+        margin: 0.3rem 3rem;
         border-radius: 5%;
-        border: solid 2px #DBFF76;
 
         &:hover {
             border: solid 6px #CD8B76;
@@ -191,7 +232,7 @@ h2 {
             }
 
             .main-img {
-                opacity: 0.3;
+                filter: brightness(0.5);
                 transition: 0.4s;
             }
         }
@@ -201,7 +242,7 @@ h2 {
             height: 100%;
             width: 100%; 
             border-radius: 2%; 
-            z-index: -1;
+            z-index: 0;
             
         }
 
@@ -209,6 +250,7 @@ h2 {
             visibility: hidden;
             display: block;
             text-align: center;
+            z-index: 2;
 
             .sub-img {
                 position: relative;
@@ -223,7 +265,7 @@ h2 {
                 font-weight: 700;
                 font-style: normal;
                 font-size: 1rem;
-                color: #DBFF76;
+                color: #CD8B76;
 
             }
 
@@ -239,9 +281,8 @@ h2 {
         position: relative;
         height: 200px;
         width: 300px;
-        margin: 4rem;
+        margin: 0.3rem 3rem;
         border-radius: 5%;
-        border: solid 2px #DBFF76;
 
         &:hover {
             border: solid 6px #CD8B76;
@@ -252,7 +293,7 @@ h2 {
             }
 
             .main-img {
-                opacity: 0.3;
+                filter: brightness(0.5);
                 transition: 0.4s;
             }
         }
@@ -262,7 +303,7 @@ h2 {
             height: 100%;
             width: 100%; 
             border-radius: 2%; 
-            z-index: -1;
+            z-index: 0;
             
         }
 
@@ -270,6 +311,7 @@ h2 {
             visibility: hidden;
             display: block;
             text-align: center;
+            z-index: 2;
 
             .sub-img {
                 position: relative;
@@ -284,7 +326,7 @@ h2 {
                 font-weight: 700;
                 font-style: normal;
                 font-size: 1rem;
-                color: #DBFF76;
+                color: #CD8B76;
 
             }
 
@@ -299,9 +341,8 @@ h2 {
         position: relative;
         height: 200px;
         width: 300px;
-        margin: 4rem;
+        margin: 0.3rem 3rem;
         border-radius: 5%;
-        border: solid 2px #DBFF76;
 
         &:hover {
             border: solid 6px #CD8B76;
@@ -312,7 +353,7 @@ h2 {
             }
 
             .main-img {
-                opacity: 0.3;
+                filter: brightness(0.5);
                 transition: 0.4s;
             }
         }
@@ -322,7 +363,7 @@ h2 {
             height: 100%;
             width: 100%; 
             border-radius: 2%; 
-            z-index: -1;
+            z-index: 0;
             
         }
 
@@ -330,6 +371,7 @@ h2 {
             visibility: hidden;
             display: block;
             text-align: center;
+            z-index: 2;
 
             .sub-img {
                 position: relative;
@@ -344,7 +386,7 @@ h2 {
                 font-weight: 700;
                 font-style: normal;
                 font-size: 1rem;
-                color: #DBFF76;
+                color: #CD8B76;
 
             }
 
@@ -359,9 +401,8 @@ h2 {
         position: relative;
         height: 200px;
         width: 300px;
-        margin: 4rem;
+        margin: 0.3rem 3rem;
         border-radius: 5%;
-        border: solid 2px #DBFF76;
 
         &:hover {
             border: solid 6px #CD8B76;
@@ -372,8 +413,8 @@ h2 {
             }
 
             .main-img {
-                opacity: 0.3;
-                transition: 0.4s;
+                filter: brightness(0.5);
+                transition: 0.3s;
             }
         }
 
@@ -382,7 +423,7 @@ h2 {
             height: 100%;
             width: 100%; 
             border-radius: 2%; 
-            z-index: -1;
+            z-index: 0;
             
         }
 
@@ -390,6 +431,7 @@ h2 {
             visibility: hidden;
             display: block;
             text-align: center;
+            z-index: 2;
 
             .sub-img {
                 position: relative;
@@ -404,7 +446,7 @@ h2 {
                 font-weight: 700;
                 font-style: normal;
                 font-size: 1rem;
-                color: #DBFF76;
+                color: #CD8B76;
 
             }
 
@@ -419,9 +461,8 @@ h2 {
         position: relative;
         height: 200px;
         width: 300px;
-        margin: 4rem;
+        margin: 0.3rem 3rem;
         border-radius: 5%;
-        border: solid 2px #DBFF76;
 
         &:hover {
             border: solid 6px #CD8B76;
@@ -432,8 +473,8 @@ h2 {
             }
 
             .main-img {
-                opacity: 0.3;
-                transition: 0.4s;
+                filter: brightness(0.5);
+                transition: 0.3s;
             }
         }
 
@@ -442,7 +483,7 @@ h2 {
             height: 100%;
             width: 100%; 
             border-radius: 2%; 
-            z-index: -1;
+            z-index: 0;
             
         }
 
@@ -450,6 +491,7 @@ h2 {
             visibility: hidden;
             display: block;
             text-align: center;
+            z-index: 2;
 
             .sub-img {
                 position: relative;
@@ -464,7 +506,7 @@ h2 {
                 font-weight: 700;
                 font-style: normal;
                 font-size: 1rem;
-                color: #DBFF76;
+                color: #CD8B76;
 
             }
 
@@ -473,13 +515,26 @@ h2 {
     }
 }
 
+#studies-projects-header-text {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: #30415D;
+    background-color: #945D60;
+    margin: 0;
+    padding: 1rem 0;
+}
+
 .studies-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "studies projects";
     color: #93A8AC;
-    margin: 4rem auto;
+    background-color: #945D60;
+    padding: 3rem auto;
 
     .studies {
         grid-area: studies;
