@@ -187,6 +187,55 @@ body{
     
 }
 
+// Aqui empieza la parte de contenedor para Soft Skills
+
+#soft-header-text {
+    text-align: start;
+    padding: 3rem 0;
+    padding-left: 3rem;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    background-color: #566E3D;
+    margin: 0;
+}
+
+.soft-skill {
+    display: flex;
+    flex-direction: column;
+    background-color: #566E3D;
+    padding-left: 3rem;
+    padding-bottom: 4rem;
+
+    .div-skills {
+        margin: 1rem 6rem;
+        padding: 0 1rem;
+    }
+
+    h2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5rem;
+        color: #30415D;
+    }
+
+    p {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: justify;
+        font-size: 1.5rem;
+        color: #3C3C3C;
+        padding-left: 2rem;
+        border-left: solid 4px #CD8B76;
+    }
+}
+
+
 // Aqui empieza la parte de contenedor para los Hobbies
 
 #hobbies-header-text {
