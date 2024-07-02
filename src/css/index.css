@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background-color: whitesmoke;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,6 +43,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+.nav a {
+  text-decoration: none;
 }
 .nav p {
   padding: 5px;
@@ -518,6 +521,9 @@ body {
   background-color: #945D60;
   padding-bottom: 5rem;
 }
+.studies-projects p {
+  color: #3C3C3C;
+}
 .studies-projects .studies {
   grid-area: studies;
   display: flex;
@@ -527,7 +533,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 .studies-projects .studies h3 {
-  color: #CD8B76;
+  color: #30415D;
 }
 .studies-projects .studies .studies-web-dev {
   display: grid;
@@ -653,7 +659,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 .studies-projects .projects h3 {
-  color: #CD8B76;
+  color: #30415D;
 }
 .studies-projects .projects .project-payment {
   display: grid;
