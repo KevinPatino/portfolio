@@ -32,11 +32,13 @@ body{
             align-content: center;
 
             p {
-                font-family: "Poppins", sans-serif;
-                font-weight: 700;
-                font-style: normal;
+                font-family: "Playwrite GB S", cursive;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: normal;    
                 font-size: 1rem;
                 color:#30415D;
+                margin: 0;
             }
 
         }
@@ -51,7 +53,7 @@ body{
         font-style: normal;
 
         p {
-            padding: 8px;
+            padding: 5px;
         }
 
         // color del texto navbar
@@ -85,8 +87,11 @@ body{
     img {
         height: 500px;
         width: 500px;
-        padding: 50px;
+        // padding: 50px;
         border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 54px 33px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 0px 54px 33px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 54px 33px rgba(0,0,0,0.2);
     }
 
     .about-me-descrip {
@@ -103,8 +108,9 @@ body{
     }
 
     .main-name {
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
+        font-family: "Playwrite GB S", cursive;
+        font-optical-sizing: auto;
+        font-weight: 800;
         font-style: normal;
         font-size: 4rem;
         color: #cf6766;
@@ -120,31 +126,68 @@ body{
         color: #3C3C3C;
     }
 
-    .more-about-me {
-        font-size: 1rem;
-        padding-left: 1rem;
+}
 
-        
-        &:hover {
-            font-weight: 700;
-            color: #CD8B76;
-            cursor: pointer;
+// Aqui empieza la parte para describir un poco mas acerca de mi
+
+#aboutme-header-text {
+    text-align: start;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    background-color: #6C648B;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+.description-aboutme {
+    background-color: #6C648B;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+        "img1 descript img2";
+
+    #text-aboutme {
+        grid-area: descript;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: justify;
+        font-size: 3.5rem;
+
+        #special {
+            background-color: #CD8B76;
+            font-style: oblique;
+            font-weight: 800;
         }
     }
+
+
+
+    
 }
 
 // Aqui empieza la parte de contenedor para los Hobbies
 
 #hobbies-header-text {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    text-align: start;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
     font-style: normal;
-    font-size: 2rem;
-    color: #30415D;
+    font-size: 2.5rem;
+    color: whitesmoke;
     background-color: #93A8AC;
     margin: 0;
-    padding: 1rem 0;
+    
 }
 
 .hobbies {
@@ -516,15 +559,18 @@ body{
 }
 
 #studies-projects-header-text {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    text-align: start;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
     font-style: normal;
-    font-size: 2rem;
-    color: #30415D;
+    font-size: 2.5rem;
+    color: whitesmoke;
     background-color: #945D60;
     margin: 0;
-    padding: 1rem 0;
+    padding-top: 3rem;
 }
 
 .studies-projects {
@@ -534,7 +580,7 @@ body{
         "studies projects";
     color: #93A8AC;
     background-color: #945D60;
-    padding: 3rem auto;
+    padding-bottom: 5rem;
 
     .studies {
         grid-area: studies;
@@ -906,22 +952,25 @@ body{
 }
 
 .contact {
-    display: block;
-    text-align: center;
-    padding: 10px 0 20px 0;
-    border-top: solid 2px #DBFF76;
-    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 3rem;
+    background-color: #945D60;
+
+    -webkit-box-shadow: 0px -10px 16px -6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px -10px 16px -6px rgba(0,0,0,0.2);
+    box-shadow: 0px -10px 16px -6px rgba(0,0,0,0.2);
     
-
-
         h5 {
             display: inline-block;
             margin: 1rem 0;
-            font-family: "Poppins", sans-serif;
-            font-weight: 700;
+            font-family: "Playwrite GB S", cursive;
+            font-optical-sizing: auto;
+            font-weight: 1000;
             font-style: normal;
-            font-size: 1rem;
-            color: #DBFF76;
+            font-size: 1.5rem;
+            color: whitesmoke;
 
         }
 
