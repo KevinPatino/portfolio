@@ -68,13 +68,14 @@ body {
   align-items: center;
   background-color: #DCD0C0;
   color: #93A8AC;
-  height: 100vh;
-  max-width: 200vh;
-  min-width: 100vh;
+  height: 50rem;
+  width: 100vw;
 }
 .about-me img {
-  height: 500px;
-  width: 500px;
+  max-height: 30rem;
+  max-width: 30rem;
+  min-height: 5rem;
+  min-width: 5rem;
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 54px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 54px 10px rgba(0, 0, 0, 0.2);
@@ -218,7 +219,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 100vw;
   background-color: #93A8AC;
 }
 .hobbies .music {
@@ -824,6 +825,40 @@ body {
   height: 2rem;
   width: 2rem;
   padding: 0 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-homepage {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 100vw;
+  }
+  .nav {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .about-me {
+    padding-top: 2rem;
+    flex-direction: column;
+  }
+  .about-me img {
+    height: 13rem;
+    width: 13rem;
+  }
+  .description-aboutme img {
+    visibility: hidden;
+  }
+  .description-aboutme #text-aboutme {
+    font-size: 2rem;
+  }
+  .hobbies {
+    padding-bottom: 45rem;
+  }
+  .studies-projects .studies {
+    padding: 2rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
